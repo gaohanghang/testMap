@@ -1,5 +1,8 @@
 package com.imooc;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @Description
  * @Author Gao Hang Hang
@@ -8,8 +11,12 @@ package com.imooc;
 public class TestMap {
 
     public static void main(String[] args) {
-        System.out.println("first=======");
-        
+        Map<String, Integer> userMap = new HashMap<>();
+        userMap.put("zhangsan3", new Integer(120));
+        userMap.put("zhangsan4", new Integer(130));
+        userMap.put("zhangsan5", new Integer(140));
+        Integer n = userMap.get("zhangsan4");
+        System.out.println(n + "=======");
     }
 
 }
